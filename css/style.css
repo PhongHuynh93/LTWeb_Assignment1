@@ -227,9 +227,6 @@ body{
 .introduce_glass_type img{
   width: 80%;
 }
-.introduce_glass_type img:hover{
-  width: 90%;
-}
 /*--Story--*/
 #story-bar{
   background: url('../images/introduce_glasses/banner-generic.jpg') no-repeat right top;
