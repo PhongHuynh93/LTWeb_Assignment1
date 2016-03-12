@@ -301,3 +301,10 @@ body{
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
   width: 100%;
 }
+
+#men_glasses {
+  color: #FFFFFF;
+  margin-left: 30%;
+  font-size: 300%;
+  margin-top: -6%;
+}
