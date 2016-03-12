@@ -112,6 +112,7 @@ body{
 /*===================Slider===============*/
 .carousel-inner img{
   width: 100%;
+  margin-top: 10%;
 }
 
 .carousel-caption{
