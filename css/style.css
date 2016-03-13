@@ -29,6 +29,10 @@ body {
         -moz-transition: background .5s ease-in-out, opacity .5s ease;
         transition: background .5s ease-in-out, opacity .5s ease;
     }
+    #custom-nav-2 {
+        background: transparent;
+        border: 0;
+    }
     #custom-nav:hover {
         background-color: #f8f8f8;
     }
@@ -236,9 +240,24 @@ body {
     text-align: center;
 }
 
+#introduce-bar-2 {
+    text-align: center;
+    margin-top: 2%;
+}
+
 #introduce-bar p {
     font: bold 1.5vw 'Montserrat';
     margin-bottom: 40px;
+}
+
+#introduce-bar-2 span {
+    font: bold 1.5vw 'Montserrat';
+    margin-bottom: 40px;
+}
+
+#introduce-bar-2 > span {
+    font-size: 2vw;
+    margin: 0% 2% 0% 2%;
 }
 
 #introduce-bar > p {
@@ -341,4 +360,24 @@ body {
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
     width: 100%;
+}
+
+
+/*
+FIlter bar
+ */
+
+#filterBar {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color-outer {
+    width: 100%;
+    text-align: center;
+}
+
+#color-inner {
+    display: inline-block;
 }
