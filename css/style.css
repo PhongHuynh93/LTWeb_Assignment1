@@ -16,9 +16,8 @@ body {
     padding: 0;
 }
 
-.padding-top-bottom {
-    padding-top: 100px;
-    padding-bottom: 50px;
+.navbar {
+    margin-bottom: 0;
 }
 
 
