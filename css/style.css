@@ -1,6 +1,5 @@
 body {
     margin: 0 auto;
-    overflow-x: hidden;
 }
 
 @font-face {
@@ -11,6 +10,15 @@ body {
 @font-face {
     font-family: TheBoldFont;
     src: url('fonts/theboldfont.ttf');
+}
+
+.padding-0-left-right {
+    padding: 0;
+}
+
+.padding-top-bottom {
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 
@@ -28,10 +36,6 @@ body {
         -webkit-transition: background .5s ease-in-out, opacity .5s ease;
         -moz-transition: background .5s ease-in-out, opacity .5s ease;
         transition: background .5s ease-in-out, opacity .5s ease;
-    }
-    #custom-nav-2 {
-        background: transparent;
-        border: 0;
     }
     #custom-nav:hover {
         background-color: #f8f8f8;
@@ -110,7 +114,6 @@ body {
 
 .carousel-inner img {
     width: 100%;
-    margin-top: 10%;
 }
 
 .carousel-caption {
@@ -135,7 +138,7 @@ body {
     background: transparent;
     border-radius: 0;
     border: 5px white solid;
-    font: bold 2vw 'Montserrat';
+    font: bold 1.4vw 'Montserrat';
 }
 
 .btn:hover {
@@ -177,10 +180,6 @@ body {
     left: 20%;
     bottom: auto;
     right: auto;
-}
-
-#second_slide h2 {
-    font-size: 2vw;
 }
 
 
@@ -240,35 +239,24 @@ body {
     text-align: center;
 }
 
-#introduce-bar-2 {
-    text-align: center;
-    margin-top: 2%;
-}
-
 #introduce-bar p {
-    font: bold 1.5vw 'Montserrat';
+    font: bold 15px'Montserrat';
     margin-bottom: 40px;
-}
-
-#introduce-bar-2 span {
-    font: bold 1.5vw 'Montserrat';
-    margin-bottom: 40px;
-}
-
-#introduce-bar-2 > span {
-    font-size: 2vw;
-    margin: 0% 2% 0% 2%;
 }
 
 #introduce-bar > p {
     margin-top: 2%;
-    font-size: 2vw;
+    font-size: 20px;
 }
 
 .introduce_glass_type {}
 
 .introduce_glass_type img {
-    width: 80%;
+    width: 90%;
+}
+
+.introduce_glass_type img:hover {
+    width: 100%;
 }
 
 
@@ -289,7 +277,6 @@ body {
 }
 
 .story-div h2 {
-    margin-top: 0;
     font-size: 1.5vw;
 }
 
@@ -314,7 +301,6 @@ body {
 
 .location-div h1,
 .story-div h1 {
-    margin-top: 0;
     font-size: 5vw;
 }
 
@@ -353,31 +339,4 @@ body {
 #footer a {
     color: black;
     font-size: 1vw;
-}
-
-.container,
-.navbar-static-top .container,
-.navbar-fixed-top .container,
-.navbar-fixed-bottom .container {
-    width: 100%;
-}
-
-
-/*
-FIlter bar
- */
-
-#filterBar {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#color-outer {
-    width: 100%;
-    text-align: center;
-}
-
-#color-inner {
-    display: inline-block;
 }
