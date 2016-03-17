@@ -122,7 +122,13 @@ body {
 }
 
 .carousel-caption h1 {
+    font: bold 3vw 'Montserrat';
+}
+
+.caption-product h1 {
     font: bold 5vw 'Montserrat';
+    text-align: right;
+    margin-top: -25px;
 }
 
 .carousel-caption h2 {
