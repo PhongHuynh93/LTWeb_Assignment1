@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Mat kinh cao cap</title>
+    <title>Cart</title>
     <meta charset="utf-8">
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -15,15 +15,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- === js for slider ==-->
-    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Mobile view -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- === js for slider ==-->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <!--=========== Navigation bar ==================-->
-    <div id="custom-nav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="custom-nav" class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -46,78 +46,71 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <!--=========== Slider ==============-->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="images/1.jpg" alt="First slide">
-                <div class="container">
-                    <div class="carousel-caption" id="first_slide">
-                        <h1 id="first_letter">don't</h1>
-                        <h1 id="second_letter">be</h1>
-                        <h1 id="third_letter">basic</h1>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+    </nav>
+    <!-- table product -->
+    <div class="row">
+        <div class="container">
+            <!-- number of glasses -->
+            <div class="col-sm-7 col-md-8">
+                <table class="table">
+                    <thead class="hide">
+                        <tr>
+                            <th colspan="2">Product</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" id="none_border">
+                                <h4><span class="fa fa-shopping-cart text-success"></span>&nbsp;shopping cart&nbsp;<small>free delivery & returns</small></h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><img src="images/cart/glass_small.png" class="img-responsive resize" alt="glass"></td>
+                            <td class="text-left">Craig | Espresso Gradient</td>
+                            <td class="text-right">
+                                <!-- <form role="form">
+                                    <div class="form-group">
+                                        <div class="col-xs-5">
+                                            <input type="number" name="number" class="form-control" value="0">
+                                        </div>
+                                    </div>
+                                </form> -->
+                                <input type="number" name="number" class="form-control" value="1">
+                                <span class="glyphicon glyphicon-refresh"></span>
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </td>
+                            <td class="text-right">€98.00</td>
+                        </tr>
+                        <tr>
+                            <th class="text-right" colspan="3">
+                                Grand Total
+                                <br />
+                                <small class="text-muted">Including VAT</small>
+                            </th>
+                            <td class="text-right"><strong>€98.00</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- place order -->
+            <div class="col-sm-5 col-md-4">
+                <div class="register-cart-box">
+                    <h4 class="register-cart-box-title">Place order</h4>
+                    <div class="register-cart-box-body">
+                        <ul class="list-unstyled register-cart-box-body-list">
+                            <li><span class="glyphicon glyphicon-ok text-success"></span>&nbsp; Free delivery & returns.</li>
+                            <li><span class="glyphicon glyphicon-ok text-success"></span>&nbsp; Including prescription lenses.
+                            </li>
+                            <li><span class="glyphicon glyphicon-ok text-success"></span>&nbsp; 30-day no-questions-asked return policy.</li>
+                        </ul>
+                    </div>
+                    <div class="register-cart-box-button">
+                        <button type="button" class="btn btn-lg btn-block btn-success" id="btn-proceed-checkout-container">Place order</button>
+                        <div class="text-center">or <a href="men_glasses.html">continue shopping</a></div>
+                        <img src="images/cart/payment.png" alt="payment method" class="img-responsive register-cart-box-callout">
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="images/2.jpg" data-src="" alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption" id="second_slide">
-                        <h1>ice, ice baby</h1>
-                        <h2>introducing Milan Smoke Sun</h2>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/3.jpg" data-src="" alt="Third slide">
-                <div class="container">
-                    <div class="carousel-caption" id="third_slide">
-                        <h1>Utrecht | we're open</h1>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">visit us</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--=============== Introducing =========================-->
-    <div class="row">
-        <div class="container-fluid" id="introduce-bar">
-            <p>Amsterdam designed eyewear, handmade from £89 including prescription lenses.</p>
-            <div class="introduce_glass_type col-xs-12 col-md-6">
-                <a href="#"><img src="images/introduce_glasses/easton_desert_spice_face.png" alt="image"></a>
-                <p>optical</p>
-            </div>
-            <div class="introduce_glass_type col-xs-12 col-md-6">
-                <a href="#"><img src="images/introduce_glasses/harris-matt_black_face.png" alt="image"></a>
-                <p>sunglasses</p>
-            </div>
-        </div>
-    </div>
-    <!--=================Story=============================-->
-    <div class="row">
-        <div class="container-fluid" id="story-bar">
-            <div class="col-md-4 col-xs-12 story-div">
-                <h1>why us?</h1>
-                <h2>we have a story to tell</h2>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">find out more</a></p>
-            </div>
-        </div>
-    </div>
-    <!--================= Location =========================-->
-    <div class="row">
-        <div class="container-fluid" id="location-bar">
-            <div class="col-md-4 col-xs-12 location-div">
-                <h1>visit us</h1>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">find a location</a></p>
             </div>
         </div>
     </div>
