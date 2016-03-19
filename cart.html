@@ -45,26 +45,62 @@
             </div>
         </div>
     </nav>
-    <!-- shopping cart title  row span 12-->
+    <!-- table product -->
     <div class="row">
         <div class="container">
-            <div class="col-xs-12 col-sm-12">
-                <h4>Shopping cart<small>free delivery & returns</small></h4>
-            </div>
-        </div>
-    </div>
-    <!-- glasses row span 8 + place order row span 4 -->
-    <div class="row">
-        <div class="container">
-            <!-- glass -->
-            <div class="col-xs-12 col-sm-8">
-                <hr/>
-                <p>Craig</p>
-                <hr/>
+            <!-- number of glasses -->
+            <div class="col-sm-7 col-md-8">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td colspan="4">
+                                <h4>Shopping cart<small>free delivery & returns</small></h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><img src="images/cart/glass_small.png" class="img-responsive resize" alt="glass"></td>
+                            <td class="text-left">Craig | Espresso Gradient</td>
+                            <td class="text-right">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <div class="col-xs-5">
+                                            <input type="number" name="number" class="form-control" value="0">
+                                        </div>
+                                    </div>
+                                </form>
+                                <span class="glyphicon glyphicon-refresh"></span>
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </td>
+                            <td class="text-right">€98.00</td>
+                        </tr>
+                        <tr>
+                            <th class="text-right" colspan="3">
+                                Grand Total
+                                <br />
+                                <small class="text-muted">Including VAT</small>
+                            </th>
+                            <td class="text-right">€98.00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <!-- place order -->
-            <div class="col-xs-12 col-sm-4">
-                <p>Easton</p>
+            <div class="col-sm-5 col-md-4">
+                <div class="register-cart-box">
+                    <h4 class="register-cart-box-title">Place order</h4>
+                    <div class="register-cart-box-body">
+                        <ul class="list-unstyled register-cart-box-body-list">
+                            <li><span class="glyphicon glyphicon-ok text-success"></span> Free delivery & returns.</li>
+                            <li><span class="glyphicon glyphicon-ok text-success"></span> Including prescription lenses.
+                            </li>
+                            <li><span class="glyphicon glyphicon-ok text-success"></span> 30-day no-questions-asked return policy.</li>
+                        </ul>
+                    </div>
+                    <div id="btn-proceed-checkout-container">
+                        <button type="button" class="class="btn btn-lg btn-proceed-checkout btn-block"">Place order</button>
+                        <div class="text-center">or <a href="men_glasses.html">continue shopping</div>
+                        <img src="images/cart/payment.png" alt="payment method" class="img-responsive register-cart-box-callout">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
