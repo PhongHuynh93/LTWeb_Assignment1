@@ -345,19 +345,11 @@ body {
 
 .register-cart-box {}
 
-.register-cart-box-title {
-    color: #000;
-    background: #e2e2e2;
-    padding: 6px 12px;
-}
+.register-cart-box-title {}
 
-.register-cart-box-body {
-    padding: 6px 12px;
-}
+.register-cart-box-body {}
 
-.register-cart-box-body-list {
-    margin-bottom: 21px;
-}
+.register-cart-box-body-list {}
 
 #btn-proceed-checkout-container {}
 
