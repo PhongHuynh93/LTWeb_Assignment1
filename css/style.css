@@ -319,42 +319,50 @@ body {
     font-size: 5vw;
 }
 
+
 /*cart*/
+
 .resize {
     width: auto;
     height: 50px;
 }
 
 .text-muted {
-    color : #777;
+    color: #777;
 }
 
-.register-cart-box{
-
+.table > tbody > tr > td {
+    vertical-align: middle;
 }
 
-.register-cart-box-title {
-
+.table > tbody > tr > td > .form-control {
+    height: 30px;
+    max-width: 60px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 6px;
 }
 
-.register-cart-box-body {
+.register-cart-box {}
 
-}
+.register-cart-box-title {}
 
-.register-cart-box-body-list {
+.register-cart-box-body {}
 
-}
+.register-cart-box-body-list {}
 
-#btn-proceed-checkout-container {
-
-}
+#btn-proceed-checkout-container {}
 
 .register-cart-box-callout {
     /*image payment*/
     width: auto;
     height: 50px;
-    
 }
+
+#none_border {
+    border: none;
+}
+
 
 /*--Footer--*/
 
